@@ -1,12 +1,12 @@
-        <!-- Thumbnail -->
-        <section id="thumbnails">
-            <% (1..12).each do |i| %>
-                <article>
-                    <a class="thumbnail" href="<%= asset_path("fulls/#{i.to_s.rjust(2, '0')}.jpg") %>" data-position="left center">
-                        <img src="<%= asset_path("thumbs/#{i.to_s.rjust(2, '0')}.jpg") %>" alt="" />
-                    </a>
-                    <h2>Thumbnail Title #{i}</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-            <% end %>
-        </section>
+<!-- Thumbnail -->
+<section id="thumbnails">
+    <% (1..12).each do |i| %>
+        <article>
+            <a class="thumbnail" href="<%= asset_path("fulls/#{i.to_s.rjust(2, '0')}.jpg") %>" data-position="left center">
+                <img src="<%= asset_path("thumbs/#{i.to_s.rjust(2, '0')}.jpg") %>" alt="" />
+            </a>
+            <h2><%= "Thumbnail Title #{i}" %></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+    <% end %>
+</section>

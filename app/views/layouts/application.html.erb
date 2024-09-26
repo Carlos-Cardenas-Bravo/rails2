@@ -18,15 +18,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="is-preload-0 is-preload-1 is-preload-2">
-
-# ddd
-
+  <!-- <body class="is-preload-0 is-preload-1 is-preload-2"> -->
+  <body>
     <!-- Main -->
     <div id="main">
       <!-- Header -->
       <header id="header">
-        <h1>Tattoo</h1>
+        <h1><%= link_to 'Tattoo', root_path %></h1>
+        <h2><%= link_to 'Historia del Tatuaje', historia_links_path %></h2>
         <p>Sitio responsivo generado en el framework <a href="https://rubyonrails.org/">Rails 7.2.1</a></p>
         <ul class="icons">
           <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
